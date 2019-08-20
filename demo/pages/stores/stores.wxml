@@ -1,0 +1,11 @@
+
+<block wx:for='{{stores}}' wx:key="{{item}}">
+   
+  <button bindtap='goToDetails' data-name='{{item.name}}' data-price='{{item.price}}' data-kind='{{item.kind}}'data-grade='{{item.grade}}'data-sold='{{item.sold}}'data-longitude='{{item.longitude}}'data-latitude='{{item.latitude}}'> 
+  <view class="name">店铺名称：{{item.name}}</view>
+  <image class="img" src="{{item.img}}"mode="aspectFill"></image>
+  </button>
+   
+
+  
+</block>  
